@@ -1,0 +1,44 @@
+@media only screen and (min-width: 800px) {
+    header,main, nav, footer {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    header {
+        grid-template-columns: 34px auto auto;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+        border-bottom: solid 1px rgb(179, 179, 179);
+    }
+
+    .navigation ul {
+        display: flex;
+    }
+
+    .navigation ul li {
+        margin: 0;
+        flex: 1;
+        text-align: center;
+    }
+
+    .navigation a {
+        border: none;
+    }
+
+    .blocks {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 15px;
+    }
+    
+    section:has(.certificated-couses) {
+        grid-column: 1 / -1;
+        grid-row: auto;
+    }
+
+}

@@ -1,0 +1,243 @@
+:root {
+    --primary-color: #f9c526;
+    --secondary-color: #d77e08;
+    --accent-color: #91440f;
+    --text-color: #333;
+    --text-color-light: #fef5c7;
+    --background-color: #fffceb;
+    --border-color: #441c04;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header {
+    display: grid;
+    grid-template-columns: 34px auto 44px;
+    align-items: center;
+    padding: 5px 0px 5px 15px;
+    border-bottom: 1px solid rgb(179, 179, 179);
+    column-gap: 8px;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+header h1 {
+    font-size: 1.5rem;
+}
+
+/* Hamburger Menu Icon */
+.hamburger {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.hamburger::after {
+    content: "\2630";
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger.show::after {
+    content: "\00D7";
+}
+
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.navigation ul li {
+    margin-bottom: 10px;
+}
+
+.navigation a {
+    display: block;
+    text-decoration: none;
+    padding: .5rem 15px;
+    color: black;
+    border-bottom: solid 1px var(--border-color);
+}
+
+.navigation ul li.current a {
+    font-weight: bold;
+    background-color: var(--background-color);
+}
+
+h1 {
+    margin-left: 15px;
+}
+
+/* main */
+main {
+    margin: 0 auto;
+    padding: 10px 15px;
+    box-sizing: border-box;
+}
+
+.title {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    color: var(--text-color);
+}
+
+.subtittle {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    letter-spacing: 1px;
+    color: var(--text-color-light);
+    background-color: var(--accent-color);
+    padding: 10rem 0;
+    margin: 0;
+    border-radius: 8px;
+}
+
+/* main blocks */
+.blocks {
+    margin-top: 1rem;
+    display: block;
+    padding: 1rem 1rem
+}
+
+section {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: var(--border-color) solid 1px;
+    border-radius: 8px;
+}
+
+.navigation-course {
+    list-style: none;
+    padding-left: 0;
+    margin: 1rem;
+    display: flex;
+    justify-content: space-around;
+    column-gap: 8px;
+}
+
+section h2 {
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+section:has(.student-photo) img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.certificated-couses ul{
+        border-top: var(--border-color) solid 1px;
+        border-bottom: var(--border-color) solid 1px;
+}
+.certificated-couses li {
+    text-decoration-line: none;
+    margin: 1rem;
+    font-size: 1.2rem;
+    color: var(--text-color);
+    transition: background-color 0.3s;
+  
+}
+
+.certificated-couses li:hover {
+    cursor: pointer;
+}
+
+.certificated-couses a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+.certificated-couses p {
+    text-align: center;
+    color: var(--text-color);
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    font-style: italic;
+}
+
+/* Course Cards */
+.course-card {
+    border: 1px solid var(--border-color);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: var(--background-color); 
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.course-card.completed {
+    background-color: var(--secondary-color); 
+    color: var(--text-color-light);
+    font-weight: bold;
+}
+
+.course-card:hover {
+    transform: scale(1.02);
+}
+
+
+/* foorer */
+footer {
+    text-align: center;
+    padding: 1rem 10px;
+    background-color: var(--primary-color);
+}
+
+.social-icon {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+    padding: 1rem;
+}
+
+.social-icon a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: var(--text-color-light) dashed 1px; 
+    border-radius: 50%; 
+}
+
+.social-icon img {
+    width: 22px;
+    height: 22px;
+}
+
+.social-icon a:hover {
+    background-color: var(--text-color-light);
+}
+
+.social-icon img:hover {
+    filter: brightness(0) saturate(100%) invert(27%) sepia(8%) saturate(749%) hue-rotate(169deg) brightness(95%) contrast(85%);
+}
+
+footer p {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
+
