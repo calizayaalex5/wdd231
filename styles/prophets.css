@@ -33,6 +33,13 @@ header>h1 {
     margin-bottom: 0.5rem;
 }
 
+#cards p {
+    font-size: 0.8rem;
+    margin: 0.2rem;
+    color: #585858;
+    font-style: italic;
+}
+
 #cards img {
     text-align: center;
     border-radius: 10px;

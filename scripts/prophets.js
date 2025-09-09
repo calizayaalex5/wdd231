@@ -26,9 +26,16 @@ async function getProphetData() {
             portrait.setAttribute("width", "260");
             portrait.setAttribute("height", "340");
 
-            card.appendChild(fullName);
-            card.appendChild(portrait);
+            let birth = document.createElement('p')
+            birth.textContent = `Date of Birth ${prophet.birthdate}`
 
+            let birthPlace = document.createElement('p')
+            birthPlace.textContent = `Birth Place: ${prophet.birthplace}`
+
+            card.appendChild(fullName);
+            card.appendChild(birth);
+            card.appendChild(birthPlace);
+            card.appendChild(portrait);
             cards.appendChild(card);
         });
     }
