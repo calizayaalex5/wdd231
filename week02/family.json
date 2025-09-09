@@ -1,0 +1,29 @@
+{
+    "familyName": "Calizaya Condori",
+    "moved": "15/05/2025",
+    "peopleInFamily": 4,
+    "visitedByBishopric" : false,
+    "individualData": [
+        {
+            "name": "Alex Bradley Josue Calizaya Condori",
+            "gender": "male",
+            "birthdate": "15/09/2003"
+        },
+        {
+            "name": "Alex Jose Calizaya Paredes",
+            "gender": "male",
+            "birthdate": "26/09/1979"
+        },
+        {
+            "name": "Eva Mayara Calizaya Condori",
+            "gender": "female",
+            "birthdate": "25/02/2007"
+        },
+        {
+            "name": "Sania Gladys Condori Condori",
+            "gender": "female",
+            "birthdate": "03/10/1976"
+        }
+    ]
+}
+

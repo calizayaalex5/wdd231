@@ -1,0 +1,51 @@
+header {
+    text-align: center;
+    background-color: #007da5; 
+}
+
+header>h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    padding: 1rem;
+    color: #ffffff;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 280px);
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+#cards section {
+    background-color: #eff0f0;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+#cards section:hover {
+    transform: scale(1.03);
+}
+
+#cards h2 {
+    margin-bottom: 0.5rem;
+}
+
+#cards img {
+    text-align: center;
+    border-radius: 10px;
+    padding: 0.5rem;
+}
+
+footer {
+    background-color: #007da5;
+}
+
+footer {
+    padding: 1rem;
+    text-align: center;
+    color: #ffffff;
+}
+
