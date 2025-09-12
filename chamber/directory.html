@@ -10,9 +10,66 @@
     <meta name="og:title" content="Chamber of Commerce Directory">
     <meta name="og:description" content="Explore our directory of local businesses and services.">
     <meta name="og:image" content="images/chamber-logo.png">
-    <meta name="og:url" content="https://www.example.com/chamber">
+    <meta name="og:url" content="https://calizayaalex5.github.io/wdd231/chamber/directory.html">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles-large.css">
+    <script src="scripts/general_scripts.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
 </head>
 <body>
-    
+    <header>
+        <img src="images/logo_page.svg" alt="page-logo">
+        <h1>Iquique Chamber of Commerce</h1>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li class="current"><a href="#">Home</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+        </nav>
+        <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+    </header>
+    <main>
+        <div class="hero-directory">
+            <h1>Directory</h1>
+            <p>Welcome to the Iquique Chamber of Commerce directory! Here, you can explore a wide range of local businesses and services that are part of our vibrant community. Whether you're looking for dining options, retail stores, professional services, or entertainment venues, our directory has got you covered.</p>
+            <div class="capa"></div>
+        </div>
+        <div class="main2">
+            <div class="b-directory">
+                <h2>Business Directory</h2>
+                <p>Explore our diverse range of local businesses and services. Use the buttons below to switch between grid and list views for easier browsing.</p>
+            </div>
+            <div class="grid-list" id="layout">
+                <button id="grid">Grid</button>
+                <button id="list">List</button>
+            </div>
+            <article class="grid">
+                <div class="cards" id="directory"></div>
+            </article>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <h3>Iquique Chamber of Commerce</h3>
+            <p>Av. Ramon Perez Opazo 2345</p>
+            <p>Iquique, Buzon 9-2</p>
+            <p>info@chamberofcommerceiquique.cl</p>
+            <p>(0056) 57-234-5678</p>
+        </div>
+        <div class="social">
+            <a href="#"><img src="images/instagram.svg" alt="Instagram" width="32" height="32"></a>
+            <a href="#"><img src="images/facebook.svg" alt="Facebook" width="32" height="32"></a>
+            <a href="#"><img src="images/twitter-x.svg" alt="Twitter-x" width="32" height="32"></a>
+        </div>
+        <div class="author-data">
+            <p>WDD231 Class Project</p>
+            <p>Alex Calizaya</p>
+            <p><span id="currentyear"></span> | Alex Calizaya | Tarapaca, Chile</p>
+            <p id="lastModified"> Last Modification</p>
+        </div>
+        
+    </footer>
 </body>
 </html>

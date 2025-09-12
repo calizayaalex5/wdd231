@@ -1,0 +1,104 @@
+{
+    "members": [
+        {
+            "name":"Fabrica Moises",
+            "address":"Amunategui 1014",
+            "phoneNumber":"+56 57 2 223344",
+            "email":"fabricamoises@fabricamoises.com",
+            "websiteURL":"https://www.fabricamoises.cl/",
+            "imageOrIcon":"https://www.fabricamoises.cl/wp-content/uploads/2025/02/Fabrica-Moises-Orginal-1024x1024.png",
+            "membershipLevel": 1,
+            "services":"Venta y frabricacion de ropa de trabajo, uniformes, ropa corporativa y ropa de seguridad."
+        },
+        {
+            "name":"Di Bacco",
+            "address":"Ruta 16, Alto Hospicio, Tarapacá",
+            "phoneNumber":"+56 57 2 223344",
+            "email":"dibacco@dbchile.cl",
+            "websiteURL":"https://dibacco.cl/",
+            "imageOrIcon":"https://dibacco.cl/wp-content/uploads/2019/02/DI-BACCO-CHILE-LOGO-2020-02.png",
+            "membershipLevel": 2,
+            "services": "Servicios de metalurgia, fabricación y montaje de estructuras metálicas."
+        },
+        {
+            "name":"ANDIGRAF",
+            "address":"Mall Zofri, Local 201, Iquique",
+            "phoneNumber":"+56 57 2 222244",
+            "email":"contacto@andigraf.cl",
+            "websiteURL":"https://andigraf.cl/?srsltid=AfmBOoqR2xXa5N-Rsd3ENRq3g3b6WdKJVzkZBhGefdIZuJYQVOU54qvc",
+            "imageOrIcon":"https://andigraf.cl/wp-content/uploads/2025/06/logo-oficial2103.png",
+            "membershipLevel": 2,
+            "services":"Venta de producctos tecnologicos, computacion, telefonia, accesorios y mas."
+        },
+        {
+            "name":"Hites",
+            "address":"Moneda 970 Piso 14, Santiago, Chile",
+            "phoneNumber":"+56 2 2570 7000",
+            "email":"contacto@hites.cl",
+            "websiteURL":"https://www.hites.com/",
+            "imageOrIcon":"https://cdn.zonebourse.com/static/instruments-logo-9431446",
+            "membershipLevel": 3,
+            "services":"Venta de ropa, electronicos, muebles, electrodomesticos y mas."
+        },
+        {
+            "name":"H&M Chile",
+            "address":"Mall Plaza, Iquique",
+            "phoneNumber":"+56 2 2570 7000",
+            "email":"contacto@h&mchile.cl",
+            "websiteURL":"https://cl.hm.com/",
+            "imageOrIcon":"https://cl.hm.com/_next/image?url=https%3A%2F%2Fhmchile.vtexassets.com%2Fassets%2Fvtex.file-manager-graphql%2Fimages%2F02b5285a-a6e6-4ef8-80c2-9c68ae098292___d81e534ae8621b10d58c605eba2fcdf5.webp&w=68&q=75 ",
+            "membershipLevel":3,
+            "services":"Venta de ropa, accesorios, calzado y mas."
+        },
+        {
+            "name":"Master Services SPA",
+            "address":"Alto Hospicio, Tarapacá",
+            "phoneNumber":"+56 57 2 223344",
+            "email":"contacto@masterservice.cl",
+            "websiteURL":"https://masterservices.cl/",
+            "imageOrIcon":"https://masterservices.cl/wp-content/uploads/2023/04/Logo-MasterServices_1-01.png",
+            "membershipLevel": 2,
+            "services":"Servicios de Importacion, Logistica, Transporte y Distribucion."
+        },
+        {
+            "name":"Elohim Security Service",
+            "address":"Alto Hospicio, Tarapacá",
+            "phoneNumber":"+56 57 2 223124",
+            "email":"contacto@elohimsecurityservice.cl",
+            "websiteURL":"https://elohimseguridad.com/",
+            "imageOrIcon":"https://elohimseguridad.com/assets/img/logo_sb.png",
+            "membershipLevel": 1,
+            "services":"Servicio de Seguridad Privada, Monitoreo, Alarmas y mas."
+        },
+        {
+            "name":"Doggis",
+            "address":"Mall Plaza, Iquique",
+            "phoneNumber":"052 2 2323344",
+            "email":"contacto@doggis.cl",
+            "websiteURL":"https://www.doggis.cl/",
+            "imageOrIcon":"https://tofuu.getjusto.com/orioneat-local/resized2/RcHZFaLbTcvaLDQq9-800-x.webp",
+            "membershipLevel": 2,
+            "services":"Venta de comida rapida, hot dogs, papas fritas y mas."
+        },
+        {
+            "name":"Golden Books",
+            "address":"Mall Plaza, Iquique",
+            "phoneNumber":"+56 9 1234 5678",
+            "email":"contacto@goldenbook.cl",
+            "websiteURL":"https://www.goldenbooks.cl/es/registro/autenticacion.php",
+            "imageOrIcon":"https://www.goldenbooks.cl/es/images/474/474-logo-golden.png",
+            "membershipLevel": 1,
+            "services":"Venta de libros, revistas, comics, papeleria y mas."
+        },
+        {
+            "name":"Idemin",
+            "address":"Alto Hospicio, Tarapacá",
+            "phoneNumber":"+56 57 2 223224",
+            "email":"ventas@idemin.cl",
+            "websiteURL":"https://ideminchile.com/",
+            "imageOrIcon":"https://idemin.cl/wp-content/uploads/Logo-removebg-v3.png",
+            "membershipLevel": 3,
+            "services":"Servicios de metalurgia, fabricación y montaje de estructuras metálicas."
+        } 
+    ]  
+}
