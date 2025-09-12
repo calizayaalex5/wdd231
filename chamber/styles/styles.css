@@ -26,7 +26,7 @@ body{
 }
 
 .hamburger:focus {
-  outline: 2px solid var(---secondary-color); 
+  outline: 2px solid var(--secondary-color); 
   outline-offset: 4px;
 }
 
