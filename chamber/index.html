@@ -14,8 +14,10 @@
     <link rel="icon" href="logo_page.ico">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/styles-large.css">
+    <link rel="stylesheet" href="styles/styles-index.css">
     <script src="scripts/general_scripts.js" defer></script>
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/api_weather/main.js" defer></script>
+    <script src="scripts/index-directory.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
@@ -35,23 +37,33 @@
         <button id="nav-button" class="hamburger" aria-label="navigation"></button>
     </header>
     <main>
-        <div class="hero-directory">
-            <h1>Directory - Chamber of Commerce</h1>
-            <p>Welcome to the Iquique Chamber of Commerce directory! Here, you can explore a wide range of local businesses and services that are part of our vibrant community. Whether you're looking for dining options, retail stores, professional services, or entertainment venues, our directory has got you covered.</p>
-            <div class="capa"></div>
+        <div class="hero-image-index">
+            <h1>WELCOME</h1>
+            <picture>
+                <source srcset="images/Comerciocamara-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/Comerciocamara.webp" media="(min-width: 500px)">
+                <img src="images/Comerciocamara-short.webp" alt="Camara de Comercio">
+            </picture>
         </div>
-        <div class="main2">
-            <div class="b-directory">
-                <h2>Business Directory</h2>
-                <p>Explore our diverse range of local businesses and services. Use the buttons below to switch between grid and list views for easier browsing.</p>
+        <div class="main-index">
+            <h1>Home</h1>
+            <div class="grid-index">
+                <div class="cards1-index">
+                    <div class="cards1-1">
+                        <h2>Events</h2>
+                            <p id="events">No events yet</p>
+                    </div>
+                    <div class="cards1-2">
+                        <h2>Current Weather</h2>
+                        <p id="current-weather"></p>
+                    </div>
+                    <div class="cards1-3">
+                        <h2>Weather Forecast</h2>
+                        <p id="weather-forecast"></p>
+                    </div>
+                </div>
+                <div class="cards2-index" id="cards-index"></div>
             </div>
-            <div class="grid-list" id="layout">
-                <button id="grid">Grid</button>
-                <button id="list">List</button>
-            </div>
-            <article class="grid">
-                <div class="cards" id="directory"></div>
-            </article>
         </div>
     </main>
     <footer>

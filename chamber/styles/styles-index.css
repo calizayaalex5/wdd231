@@ -1,0 +1,98 @@
+.cards1-index {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+}
+
+
+.hero-image-index {
+    position: relative; 
+    width: 100%;
+    height: 400px; 
+    overflow: hidden;
+    margin: 0;
+}
+
+.hero-image-index picture,
+.hero-image-index img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.hero-image-index h1 {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 5rem; 
+    text-align: center;
+    padding: 0 20px; 
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .hero-image-index {
+        height: 300px;
+    }
+
+    .hero-image-index h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .hero-image-index {
+        height: 200px;
+    }
+
+    .hero-image-index h1 {
+        font-size: 1.8rem;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .cards1-index {
+        grid-template-columns: 1fr;
+    }
+}
+
+.cards1-1,
+.cards1-2,
+.cards1-3 {
+    border: 1px darkblue solid;
+    margin: .5em;
+}
+
+.cards1-1 h2,
+.cards1-2 h2,
+.cards1-3 h2 {
+    background-color: rgb(127, 147, 165);
+    margin: 0;
+    padding: 0.4em 1em;
+}
+
+.cards1-1 p,
+.cards1-2 p,
+.cards1-3 p {
+    padding: 1em;
+}
+
+
+.cards2-index {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.cards2-index section {
+    text-align: center;
+    background-color: rgb(205, 221, 221);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1rem
+}
+
