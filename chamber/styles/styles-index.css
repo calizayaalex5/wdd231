@@ -1,3 +1,11 @@
+:root {
+    --primary-color: #007da5;
+    --secondary-color: #005f73;
+    --background-color: #e0fbfc;
+    --text-color: #333333;
+    --font-family: 'Arial', sans-serif;
+}
+
 .cards1-index {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
@@ -21,13 +29,15 @@
 
 .hero-image-index h1 {
     position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    bottom: 1rem;
+    right: 2rem;
     color: white;
-    font-size: 5rem; 
+    font-size: 1rem; 
     text-align: center;
-    padding: 0 20px; 
+    padding: 0 20px;
+    background-color: var(--secondary-color);
+    padding: 1rem 1.5rem;
+    border-radius: 10px; 
 }
 
 
@@ -37,7 +47,7 @@
     }
 
     .hero-image-index h1 {
-        font-size: 2.5rem;
+        font-size: 1rem;
     }
 }
 
@@ -47,7 +57,7 @@
     }
 
     .hero-image-index h1 {
-        font-size: 1.8rem;
+        font-size: 1rem;
     }
 }
 

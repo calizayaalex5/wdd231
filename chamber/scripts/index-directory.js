@@ -1,19 +1,27 @@
 const url = "data/members.json";
 const cardsIndex = document.querySelector("#cards-index");
 
-async function getLevel3Members() {
+async function getLevel2and3Members() {
     try {
         const response = await fetch(url);
         const data = await response.json();
 
-        // Filtrar solo nivel 3
-        const level3Members = data.members.filter(member => member.membershipLevel === 3);
-
-        displayCards(level3Members);
+        let selectedMembers = data.members.filter(member => member.membershipLevel === 2 || member.membershipLevel === 3);
+        selectedMembers = shuffleArray(selectedMembers);
+        selectedMembers = selectedMembers.slice(0, 3);
+        displayCards(selectedMembers);
     } catch (error) {
         console.error("Error al cargar miembros:", error);
         cardsIndex.textContent = "No se pudo cargar las empresas.";
+    } 
+}
+
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]]; // Intercambio
     }
+    return array;
 }
 
 function displayCards(members) {
@@ -52,4 +60,4 @@ function displayCards(members) {
 }
 
 
-getLevel3Members();
+getLevel2and3Members();
