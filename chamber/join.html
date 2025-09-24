@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/styles-large.css">
     <script src="scripts/general_scripts.js" defer></script>
-    <script src="scripts/directory.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
@@ -35,23 +34,46 @@
         <button id="nav-button" class="hamburger" aria-label="navigation"></button>
     </header>
     <main>
-        <div class="hero-directory">
-            <h1>Directory - Chamber of Commerce</h1>
-            <p>Welcome to the Iquique Chamber of Commerce directory! Here, you can explore a wide range of local businesses and services that are part of our vibrant community. Whether you're looking for dining options, retail stores, professional services, or entertainment venues, our directory has got you covered.</p>
-            <div class="capa"></div>
-        </div>
-        <div class="main2">
-            <div class="b-directory">
-                <h2>Business Directory</h2>
-                <p>Explore our diverse range of local businesses and services. Use the buttons below to switch between grid and list views for easier browsing.</p>
+        <div class="join-page"> 
+            <div class="welcome">
+                <h1>Unete a esta gran comunidad</h1>
+                <p>Estamos anciosos de trabajr junto a ti, hazte miembro y accede a un monton de benificios y consigue explandir tu negocio</p>
             </div>
-            <div class="grid-list" id="layout">
-                <button id="grid">Grid</button>
-                <button id="list">List</button>
+            <div class="formulario">
+                <form action="thankyou.html" method="get">
+                    <fieldset>
+                        <legend>Por favor complete la informacion solicitada</legend>
+                        <label for="bussines-name">Nombre de la empresa:</label>
+                            <input type="text" id="b-name" name="b-name"><br><br>
+                        <label for="direction">Direccion:</label>
+                            <input type="text" id="b-direction" name="b-direction"><br><br>
+                        <label for="field">Rubro:</label>
+                            <input type="text" id="b-field" name="b-field"><br><br>
+                        <legend>Introduzca los datos de ubicacion</legend>
+                        <label for="phone">Telefono:</label>
+                            <input type="number" id="b-phone" name="b-phone"><br><br>
+                        <label for="email">Correo Electronico:</label>
+                            <input type="email" id="b-email" name="b-email"><br><br>
+                        <label for="webpage">Pagina Web:</label>
+                            <input type="url" id="b-web" name="b-web"><br><br>
+                        <label for="member">Escoja su Nivel</label>
+                            <select name="membership" id="membership">
+                                <option value="NPmember">Non Profit Memebership Lavel</option>
+                                <option value="BronzeMember">Bronze Memebership Lavel</option>
+                                <option value="SilverMember">Silver Memebership Lavel</option>
+                                <option value="GoldMember">Gold Memebership Lavel</option>
+                            </select>
+                        <input type="submit">
+                    </fieldset>
+                </form>
             </div>
-            <article class="grid">
-                <div class="cards" id="directory"></div>
-            </article>
+            <div class="tarjetas">
+                <h2>Conoce nuestro sistema de miebros</h2>
+                    <div class="NPmember"></div>
+                    <div class="BMember"></div>
+                    <div class="SMember"></div>
+                    <div class="GMember"></div>
+            </div>
         </div>
     </main>
     <footer>
@@ -73,7 +95,6 @@
             <p><span id="currentyear"></span> | Alex Calizaya | Tarapaca, Chile</p>
             <p id="lastModified"> Last Modification</p>
         </div>
-        
     </footer>
 </body>
 </html>
