@@ -165,3 +165,31 @@ wddFilter.addEventListener('click', () => {
     document.querySelector('.certificated-couses h2').textContent = ' Web Certificated Courses | WDD';
 });
 
+const courseDetails = document.querySelector('#course-details');
+const courseCards = document.querySelector('#course-cards')
+
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = `
+        <button id="closeModal">❌</button>
+        <h2>${course.subject} ${course.number}</h2>
+        <h3>${course.title}</h3>
+        <p><strong>Credits</strong>: ${course.credits}</p>
+        <p><strong>Certificate</strong>: ${course.certificate}</p>
+        <p>${course.description}</p>
+        <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+    `;
+
+    courseDetails.showModal();
+
+    const closeModal = document.querySelector('#closeModal');
+    closeModal.addEventListener('click', () => {
+        courseDetails.close();
+    });
+}
+
+courseCards.addEventListener('click', (e) => {
+    if (e.target.closest('.course-card')) {
+        const index = [...courseCards.children].indexOf(e.target.closest('.course-card'));
+        displayCourseDetails(courses[index]);
+    }
+});
