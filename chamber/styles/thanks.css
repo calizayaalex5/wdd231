@@ -1,0 +1,37 @@
+:root {
+    --primary-color: #007da5;
+    --secondary-color: #005f73;
+    --background-color: #e0fbfc;
+    --text-color: #333333;
+    --font-family: 'Arial', sans-serif;
+}
+
+.thanks-page{
+    height: 90vh;
+}
+
+.thanks {
+    padding: 2rem 1rem;
+}
+.thanks h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    text-align: center;
+    color: #005f73;
+}
+
+.thanks>p {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.resultados {
+    margin: 1rem;
+    text-align: center;
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+}
+
+.resultados span {
+    font-weight: 700;
+}
