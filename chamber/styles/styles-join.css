@@ -106,7 +106,7 @@ form .button {
     font-size: 1rem;
     cursor: pointer;
     padding: .75rem 2rem;
-    transition: var(--background-color) 1s ease-in-out;
+    transition: background-color 1s ease-in-out;
 }
 
 form .button:hover{
