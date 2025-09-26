@@ -13,21 +13,22 @@ if (info.get('b-field') === ""){
 
 
 document.querySelector("#resultados").innerHTML = `
-    <p><span>Nombre de la Empresa:</span> ${info.get('b-name')}
-    <p><span>Direccion:</span> ${info.get('b-direction')}
-    <p><span>Rubro:</span> ${info.get('b-field')}
-    <p><span>Telefono:</span> ${info.get('b-phone')}
-    <p><span>Correo:</span> ${info.get('b-email')}
-    <p><span>Pagina Web:</span> ${info.get('b-web')}`
+    <p><span>Nombre de la Empresa:</span> ${info.get('b-name')}</p>
+    <p><span>Direccion:</span> ${info.get('b-direction')}</p>
+    <p><span>Rubro:</span> ${info.get('b-field')}</p>
+    <p><span>Telefono:</span> ${info.get('b-phone')}</p>
+    <p><span>Correo:</span> ${info.get('b-email')}</p>
+    <p><span>Pagina Web:</span> ${info.get('b-web')}</p>`
 
-
-function capitalizar(text) {
-    if (!text) return "";
-    return text.charAt(0).toUpperCase() + text.slice(1)
-}
 
 const nombre = document.querySelector("#nombre");
 if (nombre) {
-    const fname = info.get('f-name') || "Nombre no registrado";
-    nombre.innerHTML = capitalizar(fname)
+    const fname = info.get('f-name') || "";
+    const lname = info.get('l-name') || "";
+
+    function capitalizar(text) {
+        return text.split(" ").map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
+    }
+
+    nombre.innerHTML = capitalizar(`${fname} ${lname}`.trim()) || "Nombre no registrado";
 }
