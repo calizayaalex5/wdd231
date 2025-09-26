@@ -80,13 +80,17 @@ fieldset {
     border-radius: 10px; 
 }
 
-input, label, select {
+input, select, textarea {
     display: inline-block;
     width: 450px;
     height: 40px;
 }
 
-input,select {
+textarea {
+    resize: vertical;
+}
+
+input,select,textarea {
     margin-bottom: 10px;
 }
 
