@@ -19,3 +19,15 @@ document.querySelector("#resultados").innerHTML = `
     <p><span>Telefono:</span> ${info.get('b-phone')}
     <p><span>Correo:</span> ${info.get('b-email')}
     <p><span>Pagina Web:</span> ${info.get('b-web')}`
+
+
+function capitalizar(text) {
+    if (!text) return "";
+    return text.charAt(0).toUpperCase() + text.slice(1)
+}
+
+const nombre = document.querySelector("#nombre");
+if (nombre) {
+    const fname = info.get('f-name') || "Nombre no registrado";
+    nombre.innerHTML = capitalizar(fname)
+}
