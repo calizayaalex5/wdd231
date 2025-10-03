@@ -11,8 +11,9 @@ function display(places) {
         card.appendChild(name);
 
         let address = document.createElement("p");
-        address.textContent = place.direccion;
-        card.appendChild(address);
+        const theAddress = document.createElement('address')
+        theAddress.textContent = place.direccion;
+        card.appendChild(theAddress);
 
         let description = document.createElement("p");
         description.textContent = place.descripcion;

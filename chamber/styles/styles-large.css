@@ -88,3 +88,48 @@ body{
     }
 
 }
+
+    /*-------------------------Discover----------------------*/
+@media only screen and (min-width: 64rem) {
+
+    .places-iquique {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width: 38rem) {
+    .places-iquique div {
+        grid-template-areas:
+            "photograph name"
+            "photograph description"
+            "photograph location"
+    }
+
+    .places-iquique div img {
+        width: 300px;
+        height: 100%;
+        transition: all 1s ease;
+    }
+
+    .places-iquique div img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .places-iquique div h2,
+    .places-iquique div p,
+    .places-iquique div address {
+        transition: all 1s ease;
+    }
+
+    .places-iquique div:hover h2,
+    .places-iquique div:hover p,
+    .places-iquique div:hover address {
+        margin-left: 20px;
+        transition: margin 1s ease;
+}
+
+};
+    
+

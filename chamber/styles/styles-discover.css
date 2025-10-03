@@ -1,0 +1,41 @@
+
+.places-iquique div {
+    margin: 1rem 10px;
+    background-color: #eee;
+    border-radius: 10px;
+    overflow: hidden;
+
+    display: grid;
+    grid-template-areas: 
+        "name"
+        "photograph"
+        "description"
+        "location";
+}
+
+.places-iquique div h2 {
+    margin: 1rem 10px;
+    grid-area: name;
+}
+
+.places-iquique div img {
+    width: 100%;
+    grid-area: photograph;
+}
+
+.places-iquique div p {
+    margin: 1rem 10px;
+    grid-area: description;
+}
+
+.places-iquique div address {
+    margin: 1rem 10px;
+    grid-area: location;
+}
+
+
+#days {
+    text-align: center;
+    font-style: italic;
+    padding: 1rem;
+}
