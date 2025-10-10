@@ -1,0 +1,46 @@
+{
+    "projects": [
+        {
+            "name": "final project",
+            "description": "my final project for wdd 231",
+            "link": "index.html",
+            "img": "https://picsum.photos/id/120/300/400.webp"
+        },
+
+        {
+            "name": "EcoMarket",
+            "description": "Una plataforma en línea para comprar y vender productos ecológicos y sostenibles de productores locales.",
+            "link": "https://example.com/ecomarket",
+            "img": "https://picsum.photos/id/126/300/400.webp"
+        },
+
+        {
+            "name": "FitTrack",
+            "description": "Aplicación móvil para registrar rutinas de ejercicio, seguimiento de peso y progreso físico con estadísticas visuales.",
+            "link": "https://example.com/fittrack",
+            "img": "https://picsum.photos/id/129/300/400.webp"
+        },
+
+        {
+            "name": "EduConnect",
+            "description": "Portal educativo que conecta a estudiantes y tutores en línea, con clases personalizadas y recursos interactivos.",
+            "link": "https://example.com/educonnect",
+            "img": "https://picsum.photos/id/122/300/400.webp"
+        },
+
+        {
+            "name": "FoodieMap",
+            "description": "Mapa interactivo que muestra restaurantes recomendados por usuarios, con reseñas, fotos y menús actualizados.",
+            "link": "https://example.com/foodiemap",
+            "img": "https://picsum.photos/id/123/300/400.webp"
+        },
+
+        {
+            "name": "TaskFlow",
+            "description": "Gestor de proyectos colaborativo con tablero Kanban, chat en tiempo real y seguimiento de tareas por equipo.",
+            "link": "https://example.com/taskflow",
+            "img": "https://picsum.photos/id/124/300/400.webp"
+        }
+    ]
+
+}

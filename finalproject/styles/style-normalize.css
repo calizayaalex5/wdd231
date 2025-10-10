@@ -1,0 +1,622 @@
+:root {
+    --primary-color: #003566;
+    --secondary-color: #ffc300;
+    --thirdth-color: #ffd60a;
+    --text-color: #000814;
+    --forth-color: #ffd60a;
+    --font-body: 'Montserrat', sans-serif;
+    --font-title: 'Jomhuria', serif;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+/*----------- Header & Nav -----------*/
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav {
+    list-style-type: none;
+    gap: 2rem;
+    text-decoration: none;
+}
+
+.nav li {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+}
+.nav a {
+    color: white;
+    text-decoration: none;
+    transition: all 1s ease-in-out;
+}
+
+.nav a:hover {
+    transform: scale(1.1);
+}
+
+/*----------- Hero Section -----------*/
+
+.hero {
+    background-color: #ffc300;
+    color: var(--primary-color);
+    text-align: center;
+    height: 40rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 0.45;
+}
+
+.hero .h1-1 {
+    font-family: var(--font-title);
+    font-size: 10rem;
+    padding: 0;
+    margin: 0;
+    letter-spacing: 4px;
+
+}
+
+.hero .h1-2{
+    color: transparent;
+    -webkit-text-stroke: 0.3px var(--primary-color);       
+    font-size: 10rem;
+    font-family: var(--font-title);
+    letter-spacing: 3.2px;
+    margin: 0;
+}
+
+/*-------------author section-------------*/
+
+.author {
+    background-color: var(--primary-color);
+    text-align: center;
+    height: 38rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 0.45;
+}
+
+.author .Ah1-1 {
+    font-family: var(--font-title);
+    font-size: 10rem;
+    color: var(--forth-color);
+    padding: 0;
+    margin: 0;
+    letter-spacing: 4px;
+}
+
+.author .Ah1-2 {
+    font-family: var(--font-title);
+    font-size: 10rem;
+    color: transparent;
+    -webkit-text-stroke: 0.1px var(--forth-color);  
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 4px;   
+    margin: 0;  
+}
+
+.author p {
+    color: white;
+    font-family: var(--font-body);
+    font-size: 1.2rem;
+    padding: 1rem 10rem;
+    line-height: 1.5;
+}
+
+/*-------------proyectos section-------------*/
+
+.proyectos {
+    background-color: var(--secondary-color);
+    text-align: center;
+    margin: 0 auto;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.proyectos h1 {
+    font-family: var(--font-title);
+    font-size: 4rem;
+    color: var(--primary-color);
+    padding: 0;
+    margin: 0;
+    letter-spacing: 4px;
+}
+
+.proyectos p {
+    color: var(--text-color);
+    font-family: var(--font-body);
+    font-size: 1.2rem;
+    padding: 1rem 10rem;
+    line-height: 1.5;
+}
+
+.cards{
+    width: 40%;
+    max-width: 120em;
+    background-color: var(--thirdth-color);
+}
+
+.cards .cardList {
+    width: 600%;
+    border-radius: 10px;
+    margin: 1rem 0;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    transition: all 0.5s ease-in-out;
+
+    overflow: hidden;
+}
+
+.cards .cardList .card {
+    width: calc(100% / 6);
+    background-color: var(--forth-color);
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 1px 10px 30px rgba(0, 0, 0, 0.2);
+
+}
+
+
+.card p {
+    display: none;
+}
+
+.cards .puntos {
+    width: 100%;
+    padding: 1rem;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards .puntos .punto {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    margin: 1rem;
+    list-style: none;
+}
+
+.cards .punto.activo {
+    background-color: wheat;
+}
+
+
+
+/*-------------contacto section-------------*/
+
+.contacto {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 2rem 0;
+    color: white;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.contacto h1 {
+    font-family: var(--font-title);
+    font-size: 10rem;
+    color: var(--forth-color);
+    padding: 0;
+    margin: 0;
+    letter-spacing: 4px;
+}
+
+.contacto a {
+    text-decoration: none;
+    color: white;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.contacto a:hover {
+    transform: scale(1.1);
+    text-decoration: underline;
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+/*-------------FORMULARIO--------------*/
+
+.saludo {
+    background-color: var(--primary-color);
+    text-align: center;
+    color: white;
+    height: 500px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.saludo h1 {
+    font-family: var(--font-title);
+    font-size: 10rem;
+    letter-spacing: 10px;
+    animation:  textAnimation 5s infinite,
+                textMove 5s ease-in-out infinite;
+}
+
+@keyframes textAnimation {
+    50% {
+        color: var(--forth-color);
+        text-shadow: 0 0 10px var(--forth-color), 0 0 15px var(--forth-color), 0 0 20px var(--forth-color), 0 0 25px var(--forth-color);
+    }
+}
+
+@keyframes textMove {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.saludo p {
+    font-family: var(--font-body);
+    color: var(--forth-color);
+}
+
+/*--------------------Formulario-------------*/
+
+
+.formulario {
+    background-color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.formularioBase {
+    margin: 6rem auto;
+    width: 420px;
+    height: auto;
+    padding: .5rem;
+    border-radius: 10px;
+    background-color: var(--thirdth-color);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.formularioBase label,
+.formularioBase input,
+.formularioBase textarea {
+    width: 400px;
+    height: 45px;
+    border-radius: 10px;
+    margin: 10px 0 ;
+    font-family: var(--font-body);
+    padding: 1rem;
+}
+
+.formularioBase input,
+.formularioBase textarea {
+    border: none;
+    box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.formularioBase textarea {
+    resize: vertical;
+
+}
+.formularioBase button {
+    width: 400px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    color: white;
+    font-family: var(--font-body);
+    border: none;
+    cursor: pointer;
+}
+
+.formularioBase button:hover {
+    background-color: var(--text-color);
+    transition: all 0.3s ease-in-out;
+}
+
+
+/*-------------CONOCEME---------------*/
+
+.author-page .title {
+    text-align: center;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--primary-color);
+    color: white;
+    font-family: var(--font-title);
+    font-size: 5rem;
+    letter-spacing: 8px;
+}
+
+.author-page .introduccion {
+    background-color: var(--secondary-color);
+    padding: 2rem 10rem;
+    font-family: var(--font-body);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.author-page .introduccion p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--text-color);
+    align-self: center;
+}
+
+.author-page .introduccion img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    justify-self: center;
+    align-self: center;
+    object-fit: cover;
+}
+
+
+
+/*------------Gustos--------------*/
+
+.gustos {
+    background-color: var(--thirdth-color);
+    height: auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-areas:
+        "titulo lista"
+        "aqui lista";
+    grid-template-columns: 1fr 2fr;
+}
+
+.gustos h2 {
+    grid-area: titulo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-title);
+    font-size: 4rem;
+    color: var(--primary-color);
+    letter-spacing: 2px;
+}
+
+.gustos ul {
+    grid-area: lista;
+    margin: 1rem;
+    background-color: var(--secondary-color);
+    list-style: none;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 1px 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.gustos ul li {
+    font-family: var(--font-body);
+    font-size: 1.2rem;
+    color: var(--text-color);
+    padding: 0.5rem 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.gustos ul li:last-child {
+    border-bottom: none;
+}
+
+.gustos ul li:hover {
+    color: white;
+    cursor: pointer;
+    transform: scale(1.05);
+    background-color: #003566;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.gustos .square {
+    grid-area: aqui;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.square h3 {
+    background-color: var(--primary-color);
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 1px 10px 30px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease-in-out;font-family: var(--font-body);
+}
+
+.square h3:hover {
+    transform: scale(1.1);
+}
+
+
+/*-------------Experiencia---------------*/
+
+.experiencia {
+    background-color: var(--secondary-color);
+    padding: 2rem 10rem;
+    font-family: var(--font-body);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.experiencia p {
+    background-color: var(--thirdth-color);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 1px 10px 30px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.experiencia p:hover {
+    transform: scale(1.05);
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+}
+
+
+/*--------------Contacto----------------*/
+
+.datos {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 2rem 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    font-family: var(--font-body);
+}
+
+.datos ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.datos ul li{
+    display: block;
+    margin: 0.5rem 0;
+}
+
+.datos a {
+    color: white;
+    text-decoration: none;
+}
+.datos a:hover,
+.datos p:hover {
+    text-decoration: underline;
+}
+
+
+.reconomientos {
+    background-color: var(--thirdth-color);
+    padding: 2rem 10rem;
+    font-family: var(--font-body);
+    color: var(--text-color);
+    text-align: center;
+    line-height: 1.5;
+}
+
+.dialog {
+    border: none;
+    border-radius: 12px;
+    padding: 2rem;
+    width: 90%;
+    max-width: 500px;
+    background-color: var(--third-color); /* Fondo sólido */
+    color: var(--text-color);
+    font-family: var(--font-body);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: relative;
+}
+
+/* Evita transparencia extra */
+.dialog::backdrop {
+    background: rgba(0, 0, 0, 0.5); /* Fondo oscuro detrás del modal */
+    backdrop-filter: blur(10px); /* Opcional, da efecto difuminado */
+}
+
+/* Título dentro del modal */
+.dialog h2 {
+    font-family: var(--font-title);
+    font-size: 6rem;
+    color: white;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+/* Descripción */
+.dialog p {
+    font-size: 2rem;
+    line-height: 1.5;
+    color: white;
+}
+
+
+.dialog a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    background-color: var(--forth-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.dialog a:hover {
+    background-color: var(--primary-color);
+    color: var(--forth-color);
+}
+
+#closeModal {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--primary-color);
+    transition: transform 0.2s ease;
+}
+
+#closeModal:hover {
+    transform: scale(1.2);
+    color: var(--forth-color);
+}
+
+.dialog:not([open]) {
+    display: none;
+}
