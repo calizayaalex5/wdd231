@@ -112,7 +112,7 @@ label {
 
 /* responsive */
 
-        @media only screen and (max-width: 780px) {
+        @media only screen and (max-width: 1300px) {
             .main-form {
                 display: grid;
                 grid-template-columns: 1fr;
@@ -144,5 +144,5 @@ label {
             }                
 
 
-        };
+        }
         

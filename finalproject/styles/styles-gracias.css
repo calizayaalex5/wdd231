@@ -40,16 +40,20 @@
     color: var(--primary-color);
 }
 
-.gracias button {
+.gracias .btn {
     margin-top: 1rem;
     width: 300px;
     height: 40px;
     border-radius: 10px;
     border: none;
     background-color: #003566;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.gracias button a {
+.gracias .btn {
+    font-family: var(--font-body);
     text-decoration: none;
     color: #ffc300;
 }

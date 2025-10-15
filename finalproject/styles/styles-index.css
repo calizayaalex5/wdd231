@@ -450,21 +450,26 @@ body {
         }
             
 
-.contacto button {
+.contacto .btn {
+    background-color: #ffc300;
     height: 40px;
     width: 200px;
     border-radius: 10px;
     cursor: pointer;
     border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.contacto button:hover {
+.contacto .btn:hover {
     background-color: #003566;
+    color: white;
     border: 1px solid white;
 
 }
 
-.contacto button a {
+.contacto .btn {
     color: #000814;
     text-decoration: none;
 
