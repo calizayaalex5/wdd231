@@ -1,70 +1,75 @@
-// === Fetch JSON ===
-const url = "./data/projects.json"; 
-const cardList = document.querySelector("#cards"); 
-const modal = document.getElementById("proyecto-description");
+const url = "./data/projects.json"; //adquiere datos del json
+const directory = document.querySelector("#cards"); // selecciona el contenedor en el html
+
 let projects = [];
 
 async function getProjects() {
     try {
         const response = await fetch(url);
-        if (!response.ok) throw new Error("No se pudo cargar el archivo");
+        if (!response.ok) {
+            throw new Error("No se pudo cargar el archivo");
+        }
 
         const data = await response.json();
-        projects = data.projects;
+        projects = data.projects
         displayProjects(projects);
-        setupCarousel(); // inicializa carrusel después de generar tarjetas
     } catch (error) {
-        console.error("Error al obtener los datos", error);
-        cardList.innerHTML = "<p>Lo siento, no se pudieron cargar los proyectos en este momento.</p>";
+        console.error("Error al obtner los datos", error);
+        directory.innerHTML = "<p>Lo siento, no se pudieron cargar los proyectos en este momento.</p>";    
     }
 }
 
 // === Generar tarjetas ===
 function displayProjects(projects) {
     projects.forEach((project) => {
-        const card = document.createElement("div");
-        card.classList.add("card");
+        let card = document.createElement("div");
+        card.classList.add("cardsList");
+        
+        let name = document.createElement("h2");
+        name.textContent = `${project.name}`;
 
-        card.innerHTML = `
-            <img src="${project.img}" alt="Imagen de ${project.name}" loading="lazy">
-            <h2>${project.name}</h2>
-        `;
+        let image = document.createElement("img");
+        image.setAttribute("src", project.img);
+        image.setAttribute("alt", `Imagen de ${project.name}`);
+        image.setAttribute("loading", "lazy");
 
-        // Abrir modal al hacer clic
-        card.addEventListener("click", () => {
-            modal.innerHTML = `
-                <button id="closeModal">❌</button>
-                <h2>${project.name}</h2>
-                <p>${project.description}</p>
-                <a href="${project.link}" target="_blank">Ver proyecto</a>
-            `;
-            modal.showModal();
+        let description = document.createElement("p");
+        description.textContent = `${project.description}`;
 
-            document.getElementById("closeModal").addEventListener("click", () => {
-                modal.close();
-            });
-        });
+        let link = document.createElement("a");
+        link.setAttribute("href", project.link);
+        link.setAttribute("target", "_blank");
+        link.textContent = "Ver proyecto";
 
-        cardList.appendChild(card);
+        card.appendChild(name);
+        card.appendChild(image);
+        card.appendChild(description);
+        card.appendChild(link);
+
+        directory.appendChild(card);
     });
+} //crea los elementos en el html y los añade al contenedor
+
+getProjects(); //llama a la funcion
+
+
+//crea dos maneras de mostrar el listado de los proyectos
+
+const completeButton = document.querySelector('#grid')
+const resumeButton = document.querySelector('#list')
+const display = document.querySelector('#cards')
+
+//se selecciona la acction      accion  ||  funcion por activar
+completeButton.addEventListener('click', showComplete)
+resumeButton.addEventListener("click", showList);
+
+//las funciones cambian la clase del contendor si es "complete" o "list"
+function showComplete() {
+    display.classList.add("complete");
+    display.classList.remove("list");
 }
 
-// === Carrusel con puntos ===
-function setupCarousel() {
-    const cardsContainer = document.querySelector(".cardList"); // tu contenedor #cards
-    const puntos = document.querySelectorAll(".punto");
-    const cardsPerView = 3; // número de tarjetas visibles
-    const cardWidthPercent = 100 / cardsPerView;
-
-    puntos.forEach((cadaPunto, i) => {
-        cadaPunto.addEventListener("click", () => {
-            const operacion = i * -cardWidthPercent;
-            cardsContainer.style.transform = `translateX(${operacion}%)`;
-
-            puntos.forEach(p => p.classList.remove("activo"));
-            cadaPunto.classList.add("activo");
-        });
-    });
+function showList() {
+    display.classList.add('list');
+    display.classList.remove('complete')
 }
-
-getProjects();

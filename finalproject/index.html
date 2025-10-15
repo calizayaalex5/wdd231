@@ -7,23 +7,20 @@
     <meta name="author" content="Alex Calizaya">
     <meta name="title" content="final Project">
     <meta name="description" content="projecto in work">
-    <link rel="stylesheet" href="styles/style-normalize.css">
-    <link rel="stylesheet" href="styles/style-small.css">
-    <link rel="stylesheet" href="styles/style-medium.css">
-    <link rel="stylesheet" href="styles/style-large.css">
+    <link rel="stylesheet" href="styles/generall.css">
+    <link rel="stylesheet" href="styles/styles-index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jomhuria&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
     <body>
         <header>
-            <ul class="nav">
-                <li>
-                    <a href="autor.html">about quien?</a>
-                    <a href="#">Al3x C4l1zay4</a>
-                    <a href="#">Somthing funny</a>
-                </li>
+            <ul class="nav" id="nav-bar">
+                    <li><a href="autor.html">about quien?</a></li>
+                    <li><a href="#">Al3x C4l1zay4</a></li>
+                    <li><a href="form.html">Somthing funny</a></li>
             </ul>
+            <button id="nav-button" class="hamburger" aria-label="navigation"></button>
         </header>
         <main>
             <div class="hero" id="hero">
@@ -34,31 +31,39 @@
                 </div>  
             </div>
             <div class="author">
-                <h1 class="Ah1-1">ALEX CALIZAYA</h1>
-                <h1 class="Ah1-2">ALEX CALIZAYA</h1>
+                <div class="nombre">
+                    <h1 class="Ah1-1">ALEX CALIZAYA</h1>
+                    <h1 class="Ah1-2">ALEX CALIZAYA</h1>
+                </div>
                 <p>Hola Como sabes, me llamo Alex, me ancanta programar, amo diseñar cosas como paginas, apps, etc. Tambien amo los gatos :D</p>
             </div>
             <div class="proyectos">
                 <h1>PROYECTOS</h1>
                 <p>Como saber si realmente me gusta, si no conoces mis proyectos! Echale un vistazo y dime que te parece!</p>
-                <div class="cards">
-                    <div class="cardList" id="cards"></div>
-                    <ul class="puntos">
-                        <li class="punto"></li>
-                        <li class="punto"></li>
-                    </ul>
+                <div class="botones">
+                    <button class="grid" id="grid">Detalles</button>
+                    <button class="list" id="list">Resumen</button>
                 </div>
+                    <div class="cards complete" id="cards"> </div>
             </div>
             <div class="contacto">
-                <h1>CONTACTAME</h1>
-                <a href="form.html">Hagamos magia</a>
+                <h1>CONTÁCTAME</h1>
+                <button><a href="form.html">Hagamos magia</a></button>
             </div>
-            <dialog class="dialog" id="proyecto-description"></dialog>
         </main>
         <footer>
-            
+            <div class="simpleFooter">
+                <p><span id="currentyear"></span> | Alex Calizaya | Tarapaca, Chile</p>
+                <p id="lastModified"> Last Modification</p>
+            </div>
+                <div class="icon">
+                    <a href="https://facebook.com"><img src="images/svg/facebook.svg" height="25px"></a>
+                    <a href="https://linkedin.com"><img src="images/svg/linkedin.svg" height="25px"></a>
+                    <a href="https://github.com"><img src="images/svg/github.svg" height="25px"></a>
+                    <a href="https://instagram.com"><img src="images/svg/instagram.svg" height="25px"></a>
+                </div>
         </footer>
         <script src="scripts/proyectos.js"></script>
-        <script  type="module"src="scripts/hero.js"></script>
+        <script src="scripts/hmaburguer-button.js"></script>
     </body>
 </html>

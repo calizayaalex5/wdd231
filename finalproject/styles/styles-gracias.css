@@ -1,0 +1,63 @@
+:root {
+    --primary-color: #003566;
+    --secondary-color: #ffc300;
+    --thirdth-color: #ffd60a;
+    --text-color: #000814;
+    --forth-color: #ffd60a;
+    --font-body: 'Montserrat', sans-serif;
+    --font-title: 'Jomhuria', serif;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* gracias */
+.gracias{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    height: 100vh;
+}
+
+.gracias h1 {
+    font-family: var(--font-title);
+    font-size: 10rem;
+    color: var(--primary-color);
+}
+
+.gracias p {
+    text-align: center;
+    font-family: var(--font-body);
+}
+
+.gracias p span {
+    font-weight: 800;
+    color: var(--primary-color);
+}
+
+.gracias button {
+    margin-top: 1rem;
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: #003566;
+}
+
+.gracias button a {
+    text-decoration: none;
+    color: #ffc300;
+}
+
+@media only screen and (max-width: 1000px){
+    .gracias h1 {
+        font-size: 4rem;
+    }
+    
+}
+

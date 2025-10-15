@@ -1,0 +1,150 @@
+:root {
+    --primary-color: #003566;
+    --secondary-color: #ffc300;
+    --thirdth-color: #ffd60a;
+    --text-color: #000814;
+    --forth-color: #ffd60a;
+    --font-body: 'Montserrat', sans-serif;
+    --font-title: 'Jomhuria', serif;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+/*----------- Header & Nav -----------*/
+
+header {
+    padding: 25px;
+    background-color: var(--primary-color);
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+}
+.nav li {
+    list-style: none;
+    gap: 20px;
+}
+
+.nav li a {
+    color: white;
+    text-decoration: none;
+    font-family: var(--font-body);
+    margin: 1rem;
+    
+    font-family: var(--font-body)
+
+}
+
+.hamburger {
+    display: none;
+}
+
+/*----------nav responsive--------*/
+
+@media only screen and (max-width: 768px) {
+    .nav {
+        display: none;
+        flex-direction: column;
+    }
+
+    .nav.show {
+        display: flex;
+        background-color: var(--primary-color);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 10px 0;
+
+        border-top: white 2px solid;
+        animation: slideDown 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }
+
+    /*/animacion de despliegue del menu/*/
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    /*/---------------------------------/*/
+
+    .nav.show li {
+        text-align: center;
+        margin: 15px 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+        left: 10px;
+
+        color: white;
+        
+    }
+
+    .hamburger::after {
+    content: "\2630";
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    }
+
+    .hamburger.show::after {
+        content: "\00D7";
+    }
+}
+
+/*------------------------------*/
+
+/* footer */
+
+footer {
+        background-color: #ffd60a;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+}
+
+.simpleFooter {
+    text-align: center;
+    padding: 4rem;
+}
+
+.simpleFooter p {
+    font-family: var(--font-body);
+    font-weight: 600;
+}
+
+.icon {
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    background-color: #003566;
+    padding: 1rem 3rem;
+    border-radius: 50px;
+
+    transition: all .5s ease-in-out;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+    box-shadow: 1px 10px 20px rgba(0,0,0,0.5);
+}

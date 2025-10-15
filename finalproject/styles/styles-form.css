@@ -1,0 +1,148 @@
+:root {
+    --primary-color: #003566;
+    --secondary-color: #ffc300;
+    --thirdth-color: #ffd60a;
+    --text-color: #000814;
+    --forth-color: #ffd60a;
+    --font-body: 'Montserrat', sans-serif;
+    --font-title: 'Jomhuria', serif;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.main-form {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    height: 80vh;
+    background-color: #ffd60a;
+}
+
+
+
+/* saludo */
+
+.saludo h1 {
+    font-family: var(--font-title);
+    margin: 0;
+    font-size: 10rem;
+    letter-spacing: .4rem;
+    color: var(--primary-color);
+}
+
+.saludo p {
+    font-family: var(--font-body);
+    font-size: 1.3rem;
+}
+
+/* formulario */
+form {
+    background-color: var(--secondary-color);
+    height: auto;
+    width: auto;
+    border-radius: 10px;
+}
+
+/* ajuste generales del fomulario */
+label,
+input,
+textarea,
+.formulario button {
+    display: block;
+    width: 600px;
+    border-radius: 10px;
+    display: flex;
+    margin: .5rem;
+}
+
+/* ajustes para los cuadros de recoleccion de datos */
+input,
+textarea,
+.formulario button {
+    margin-bottom: 10px;
+    height: 45px;
+    border: none;
+    padding: 1rem;
+}
+
+/* ajuste de rezice para el text area */
+textarea {
+    resize: vertical;
+}
+
+/* ajuste de boton */
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* label */
+
+label {
+    font-family: var(--font-body);
+    padding: .4rem;
+    font-size: 1.3rem;
+}
+
+.obligatorio {
+    color: #003566;
+    font-size: 1.5rem;
+}
+
+.saludo,
+.formulario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.saludo {
+    flex-direction: column;
+    text-align: center;
+    margin: 2rem;
+}
+
+.formulario {
+    margin-right: 4rem;
+}
+
+
+/* responsive */
+
+        @media only screen and (max-width: 780px) {
+            .main-form {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-areas: 
+                    "saludo"
+                    "form";
+
+                height: auto;
+            }
+
+            .saludo {
+                grid-area: saludo;
+            }
+
+            .formulario {
+                grid-area: form;
+                margin: 1rem auto;
+            }
+
+            .saludo h1 {
+                font-size: 5rem;
+                letter-spacing: 1px;
+            }
+            label,
+            input,
+            textarea,
+            .formulario button {
+                width: 360px;
+            }                
+
+
+        };
+        
