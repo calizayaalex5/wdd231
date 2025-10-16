@@ -32,6 +32,7 @@
                     <img src="images/hola.jpg" alt="autor">
                     <p>Hola! Soy Alex Calizaya, un apasionado desarrollador web y diseñador con un amor especial por los gatos. Me encanta crear experiencias digitales atractivas y funcionales. Cuando no estoy programando o diseñando, probablemente me encuentres jugando con mis gatos o explorando nuevas ideas creativas. ¡Encantado de conocerte!</p>
                 </div>
+                <button id="openCatModal" class="btn-cat">Mi tip para programar 🤫</button>
                 <div class="gustos">
                     <div class="border">
                         <h2 class="text-shadows">Algo sobre mi</h2>
@@ -95,6 +96,17 @@
                     <a href="https://instagram.com"><img src="images/svg/instagram.svg" alt="instagram" height="25"></a>
                 </div>           
         </footer>
+
+            <!-- Modal -->
+            <div id="catModal" class="modal-overlay">
+                <div class="modal-box animate__animated animate__zoomIn">
+                    <button class="close-modal" id="closeCatModal" aria-label="Cerrar">✖</button>
+                    <img src="images/gato.JPG" alt="Gato del autor" class="cat-img">
+                    <h2>Mi Michi cheat</h2>
+                    <p>Este es michi es <strong>Kairi</strong>, mi compañera de código. Siempre se sienta junto a mí cuando programo y me recuerda tomar descansos (o servirle comida 😹).</p>
+                </div>
+            </div>
+        <script src="scripts/modal.js"></script>
         <script src="scripts/hmaburguer-button.js"></script>
     </body>
 </html>
