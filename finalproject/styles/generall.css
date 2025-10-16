@@ -148,3 +148,22 @@ footer {
     transform: scale(1.1);
     box-shadow: 1px 10px 20px rgba(0,0,0,0.5);
 }
+
+/* video */
+
+.video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 100%;
+    background-color: var(--secondary-color);
+    border-radius: 30px;
+    margin-bottom: 2rem;
+    box-shadow: 1px 20px 20px rgba(0,0,0,0.5);
+}
+
+.video a {
+    text-decoration: none;
+    font-family: var(--font-body);
+}
